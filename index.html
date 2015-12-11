@@ -2,20 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>screen cap me</title>
+  <title>Ad Nauseam</title>
   <script src="/html2canvas-0.5.0-beta3/dist/html2canvas.min.js"></script>
   <script src="/JavaScript-Canvas-to-Blob-2.2.2/js/canvas-to-blob.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- Test Ad -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-5953721660919427"
-       data-ad-slot="1625510594"
-       data-ad-format="auto"></ins>
   <script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
+    (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
+
   <script>
     document.addEventListener("DOMContentLoaded", function(event) {
       var msnry = new Masonry( '.grid', {
@@ -33,12 +29,13 @@
     nav {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
-      background-color: #555;
+      background-color: white;
       padding: 1em;
     }
-    a { text-decoration: underline; color: black; }
+    a { padding-left: 2em; text-decoration: underline; color: black; }
+    .title { font-size: 2em; }
     .grid { width: 90vw; margin: auto; }
     .grid-item {
       width: 200px;
@@ -49,15 +46,16 @@
       align-items: center;
     }
     .grid-item--width2 { width: 400px; }
-    .title { font-size: 2em; }
   </style>
 </head>
 <body>
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521298ae5b5d1af7" async="async"></script>
   <nav>
-    <a href="#" class="title">Ad Nauseam</a>
-    <a href="#">About</a>
-    <a href="#">Gallery</a>
+    <a href="/" class="title">Ad Nauseam</a>
+    <div>
+      <a href="/about.html">About</a>
+      <a href="#">Gallery</a>
+    </div>
   </nav>
   <div class="grid">
     <div class="grid-item">
@@ -67,7 +65,12 @@
       <img src="http://lorempixel.com/191/180" />
     </div>
     <div class="grid-item">
-      <img src="http://lorempixel.com/192/200" />
+      <p>google ad below</p>
+      <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-5953721660919427"
+       data-ad-slot="1625510594"
+       data-ad-format="auto"></ins>
     </div>
     <div class="grid-item">
       <img src="http://lorempixel.com/193/200" />
