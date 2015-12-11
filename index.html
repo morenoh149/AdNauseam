@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>screen cap me</title>
+  <script src="/html2canvas-0.5.0-beta3/dist/html2canvas.min.js"></script>
+  <script src="/JavaScript-Canvas-to-Blob-2.2.2/js/canvas-to-blob.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      html2canvas(document.body).then(function(canvas) {
+        canvas.toDataURL(); // <-- do something with base64 string image
+      });
+    });
+  </script>
+  <style>
+    .grid-item { width: 200px; background: pink; padding: 5px; }
+    .grid-item--width2 { width: 400px; }
+  </style>
+</head>
+<body>
+  <h1>test this</h1>
+  <div class="grid">
+    <div class="grid-item">...</div>
+    <div class="grid-item grid-item--width2">...</div>
+    <div class="grid-item">...</div>
+  </div>
+</body>
+</html>
