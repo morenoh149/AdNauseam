@@ -1,0 +1,23 @@
+body { font-family: sans-serif; margin: 0; }
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1em;
+}
+a { text-decoration: none; color: black; }
+a.pad { padding-right: 2em; }
+.title { font-size: 2em; }
+.container { width: 80vw; margin: auto; }
+.grid { margin: auto; }
+.grid-item {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-item--width2 { width: 400px; }
+p { max-width: 600px; text-align: justify; }

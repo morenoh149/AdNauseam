@@ -14,125 +14,104 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function(event) {
+      console.log('dom ready')
       var msnry = new Masonry( '.grid', {
         itemSelector: '.grid-item',
         columnWidth: 200,
         isFitWidth: true
       });
-      html2canvas(document.body).then(function(canvas) {
-        // canvas.toDataURL(); // <-- do something with base64 string image
-      });
     });
   </script>
-  <style>
-    body { font-family: sans-serif; margin: 0; }
-    nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      background-color: white;
-      padding: 1em;
-    }
-    a { padding-left: 2em; text-decoration: underline; color: black; }
-    .title { font-size: 2em; }
-    .grid { width: 90vw; margin: auto; }
-    .grid-item {
-      width: 200px;
-      height: 200px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .grid-item--width2 { width: 400px; }
-  </style>
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521298ae5b5d1af7" async="async"></script>
-  <nav>
-    <a href="/" class="title">Ad Nauseam</a>
-    <div>
-      <a href="/about.html">About</a>
-      <a href="#">Gallery</a>
-    </div>
-  </nav>
-  <div class="grid">
-    <div class="grid-item">
-      <img src="http://lorempixel.com/190/200" />
-    </div>
-    <div class="grid-item grid-item--width2">
-      <img src="http://lorempixel.com/191/180" />
-    </div>
-    <div class="grid-item">
-      <p>google ad below</p>
-      <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-5953721660919427"
-       data-ad-slot="1625510594"
-       data-ad-format="auto"></ins>
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/193/200" />
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/194/200" />
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/195/200" />
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/196/200" />
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/197/200" />
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/190/200" />
-    </div>
-    <div class="grid-item grid-item--width2">
-      <img src="http://lorempixel.com/191/180" />
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/192/200" />
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/193/200" />
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/194/200" />
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/195/200" />
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/196/200" />
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/197/200" />
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/190/200" />
-    </div>
-    <div class="grid-item grid-item--width2">
-      <img src="http://lorempixel.com/191/180" />
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/192/200" />
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/193/200" />
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/194/200" />
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/195/200" />
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/196/200" />
-    </div>
-    <div class="grid-item">
-      <img src="http://lorempixel.com/197/200" />
+  <div class="container">
+    <nav>
+      <a href="/" class="title">Ad Nauseam</a>
+      <div>
+        <a href="/about.html" class="pad">About</a>
+        <a href="#">Gallery</a>
+      </div>
+    </nav>
+    <div class="grid">
+      <div class="grid-item">
+        <img src="http://lorempixel.com/190/200" />
+      </div>
+      <div class="grid-item grid-item--width2">
+        <img src="http://lorempixel.com/191/180" />
+      </div>
+      <div class="grid-item">
+        <p>google ad below</p>
+        <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-5953721660919427"
+         data-ad-slot="1625510594"
+         data-ad-format="auto"></ins>
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/193/200" />
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/194/200" />
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/195/200" />
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/196/200" />
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/197/200" />
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/190/200" />
+      </div>
+      <div class="grid-item grid-item--width2">
+        <img src="http://lorempixel.com/191/180" />
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/192/200" />
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/193/200" />
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/194/200" />
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/195/200" />
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/196/200" />
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/197/200" />
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/190/200" />
+      </div>
+      <div class="grid-item grid-item--width2">
+        <img src="http://lorempixel.com/191/180" />
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/192/200" />
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/193/200" />
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/194/200" />
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/195/200" />
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/196/200" />
+      </div>
+      <div class="grid-item">
+        <img src="http://lorempixel.com/197/200" />
+      </div>
     </div>
   </div>
 </body>
