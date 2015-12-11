@@ -17,7 +17,7 @@
       var msnry = new Masonry( '.grid', {
         itemSelector: '.grid-item',
         columnWidth: 200,
-        isOriginLeft: false
+        isFitWidth: true
       });
       html2canvas(document.body).then(function(canvas) {
         // canvas.toDataURL(); // <-- do something with base64 string image
@@ -40,7 +40,6 @@
     .grid-item {
       width: 200px;
       height: 200px;
-      background: pink;
       display: flex;
       justify-content: center;
       align-items: center;
