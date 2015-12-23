@@ -1,15 +1,33 @@
-body { font-family: sans-serif; margin: 0; }
+body {
+  font-family: 'Old Standard TT', serif;
+  margin: 0;
+}
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 1em;
+  padding: 0.9em;
 }
-a { text-decoration: none; color: black; }
-a.pad { padding-right: 2em; }
-.title { font-size: 2em; }
+a {
+  text-decoration: none;
+  color: black;
+}
+nav > div > a {
+  font-family: 'Old Standard TT';
+  font-weight: 700;
+  font-size: 1.1em;
+  padding-right: 2em;
+}
+nav > div > a:last-child {
+  padding-right: 0;
+}
+.title {
+  font-size: 2em;
+  font-family: 'Playfair Display';
+  font-weight: 900;
+}
 .container { width: 90vw; margin: auto; }
 .grid { margin: auto; }
 img { width: inherit; }
@@ -39,10 +57,16 @@ p { max-width: 600px; text-align: justify; }
 /* mobile view */
 @media (max-width: 600px) {
   .container { width: 260px; }
-  nav > div {
+  nav {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+  }
+  nav > div {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
   }
   a.pad { padding-right: 0; }
   .grid-item, .grid-item > img {
