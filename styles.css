@@ -12,6 +12,7 @@ a.pad { padding-right: 2em; }
 .title { font-size: 2em; }
 .container { width: 90vw; margin: auto; }
 .grid { margin: auto; }
+img { width: inherit; }
 .grid-item {
   width: 200px;
   height: 200px;
@@ -34,3 +35,17 @@ p { max-width: 600px; text-align: justify; }
 .grid-600-350 { width: 600px; height: 350px; }
 .grid-600-800 { width: 600px; height: 800px; }
 .grid-800-700 { width: 800px; height: 700px; }
+
+/* mobile view */
+@media (max-width: 600px) {
+  .container { width: 260px; }
+  nav > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  a.pad { padding-right: 0; }
+  .grid-item, .grid-item > img {
+    width: 260px;
+  }
+}
