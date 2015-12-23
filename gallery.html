@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link
+    href='https://fonts.googleapis.com/css?family=Playfair+Display:900|Old+Standard+TT:400,700'
+    rel='stylesheet'
+    type='text/css' >
+  <title>adnauseam | Gallery</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.2.26.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      new AWS
+        .S3()
+        .listObjects({Bucket: 'www.adnauseam.gallery'}, function(error, data) {
+        if (error) {
+          console.log(error); // an error occurred
+        } else {
+          console.log(data); // request succeeded
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521298ae5b5d1af7" async="async"></script>
+  <div class="container">
+    <nav>
+      <a href="/" class="title">adnauseam</a>
+      <div>
+        <a href="/about.html">About</a>
+        <a href="/gallery.html">Gallery</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+</body>
+</html>
